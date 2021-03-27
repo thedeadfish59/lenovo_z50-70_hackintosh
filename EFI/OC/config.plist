@@ -392,6 +392,8 @@
 	</dict>
 	<key>Booter</key>
 	<dict>
+		<key>Patch</key>
+		<array/>
 		<key>MmioWhitelist</key>
 		<array/>
 		<key>Quirks</key>
@@ -875,6 +877,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 			<key>AppleCpuPmCfgLock</key>
 			<true/>
 			<key>AppleXcpmCfgLock</key>
@@ -888,7 +892,7 @@
 			<key>DisableIoMapper</key>
 			<true/>
 			<key>DisableLinkeditJettison</key>
-			<false/>
+			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExtendBTFeatureFlags</key>
@@ -928,6 +932,8 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>LauncherOption</key>
+			<string>Disabled</string>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
@@ -937,7 +943,7 @@
 			<key>PickerAttributes</key>
 			<integer>17</integer>
 			<key>PickerAudioAssist</key>
-			<false/>
+			<true/>
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PollAppleHotKeys</key>
@@ -1112,6 +1118,8 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
@@ -1133,6 +1141,8 @@
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 		<key>UpdateNVRAM</key>
 		<true/>
 		<key>UpdateSMBIOS</key>
@@ -1159,6 +1169,12 @@
 		</dict>
 		<key>Audio</key>
 		<dict>
+			<key>SetupDelay</key>
+			<integer>0</integer>
+			<key>ResetTrafficClass</key>
+			<false/>
+			<key>PlayChime</key>
+			<string>Enabled</string>
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
@@ -1169,8 +1185,6 @@
 			<true/>
 			<key>MinimumVolume</key>
 			<integer>40</integer>
-			<key>PlayChime</key>
-			<string>1</string>
 			<key>VolumeAmplifier</key>
 			<integer>143</integer>
 		</dict>
@@ -1204,6 +1218,8 @@
 		</dict>
 		<key>Output</key>
 		<dict>
+			<key>GopPassThrough</key>
+			<false/>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ConsoleMode</key>
@@ -1223,7 +1239,7 @@
 			<key>Resolution</key>
 			<string>1920x1080</string>
 			<key>SanitiseClearScreen</key>
-			<true/>
+			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
@@ -1232,7 +1248,7 @@
 		<key>ProtocolOverrides</key>
 		<dict>
 			<key>AppleAudio</key>
-			<false/>
+			<true/>
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
@@ -1270,6 +1286,10 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>DisableSecurityPolicy</key>
+			<false/>
+			<key>ActivateHpetSupport</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
