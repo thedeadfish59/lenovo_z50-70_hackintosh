@@ -1,6 +1,8 @@
 # Hackintoshing Lenovo IdeaPad Z50-70
 Based on OpenCore 0.6.8, updated to run big sur 11.2.3
 
+![About Screen](https://i.imgur.com/oHxYeY2.png)
+
 Spec:
 Intel Core i7 4th Gen
 Intel HD 4400
@@ -12,7 +14,14 @@ Everything except not working list
 Whats not working:
 Nvidia DGPU 
 
+OpenCore themed:
+![Bootloader Screen](https://i.imgur.com/QhmWR5f.png)
+
+-Limitations with this EFI:
+- Boot Chime is broken (its WIP, will fix)
+- Cant boot to Windows, had to find a way to avoid acpi patching for win10
 
 N.B: I have whitelisted my bios to disable wifi card restriction, so that i can use any wifi card i want, and with this efi, am using Intel WiFi 7260 card, now it supports Bluetooth WiFi and AirDrop and more
 
 N.B 2: Thanks to this guy for help https://www.tonymacx86.com/threads/guide-lenovo-z50-70-z40-70-g50-70-g40-70-using-clover-uefi.261787/post-2197405
+
