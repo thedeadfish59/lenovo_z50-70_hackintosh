@@ -116,6 +116,10 @@
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_OSI to XOSI</string>
 				<key>Count</key>
@@ -142,6 +146,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_BIF to BIFX</string>
 				<key>Count</key>
@@ -168,6 +176,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_BST to XBST</string>
 				<key>Count</key>
@@ -194,6 +206,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>MHPF to XHPF</string>
 				<key>Count</key>
@@ -220,6 +236,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>MHIF to XHIF</string>
 				<key>Count</key>
@@ -246,6 +266,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>GBID to XBID</string>
 				<key>Count</key>
@@ -272,6 +296,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>SMTF to XMTF</string>
 				<key>Count</key>
@@ -298,6 +326,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>GPRW to XPRW</string>
 				<key>Count</key>
@@ -324,6 +356,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_Q11 to XQ11</string>
 				<key>Count</key>
@@ -350,6 +386,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_Q12 to XQ12</string>
 				<key>Count</key>
@@ -398,6 +438,8 @@
 		<array/>
 		<key>Quirks</key>
 		<dict>
+			<key>ForceBooterSignature</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -888,7 +930,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<false/>
+			<true/>
 			<key>DisableIoMapper</key>
 			<true/>
 			<key>DisableLinkeditJettison</key>
@@ -934,6 +976,8 @@
 		<dict>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
@@ -941,11 +985,13 @@
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>PickerAttributes</key>
-			<integer>17</integer>
+			<integer>5</integer>
 			<key>PickerAudioAssist</key>
 			<true/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Modern</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -953,11 +999,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
-			<key>LauncherPath</key>
-			<string>Default</string>
-			<key>PickerVariant</key>
-			<string>Modern</string>
+			<integer>0</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -979,24 +1021,7 @@
 			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>CustomOS</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -1038,7 +1063,7 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>DefaultBackgroundColor</key>
-				<data>v7+/AA==</data>
+				<data>AAAAAA==</data>
 				<key>UIScale</key>
 				<data>AQ==</data>
 			</dict>
@@ -1148,7 +1173,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Custom</string>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -1192,6 +1217,7 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>CrScreenshotDxe.efi</string>
 			<string>AudioDxe.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenHfsPlus.efi</string>
