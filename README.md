@@ -19,7 +19,6 @@ OpenCore themed:
 
 -Limitations with this EFI:
 - Boot Chime is broken (its WIP, will fix)
-- Cant boot to Windows, had to find a way to avoid acpi patching for win10
 
 N.B: I have whitelisted my bios to disable wifi card restriction, so that i can use any wifi card i want, and with this efi, am using Intel WiFi 7260 card, now it supports Bluetooth WiFi and AirDrop and more
 
