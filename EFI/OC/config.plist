@@ -1143,37 +1143,37 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>MaxBIOSVersion</key>
-			<false/>
 			<key>AdviseWindows</key>
+			<false/>
+			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
 			<string>C02428404J9FH31AD</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>MacBookPro11,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02N2ZYGFH00</string>
+			<string>C02N2ZYFGH02</string>
 			<key>SystemUUID</key>
-			<string>28593E78-8169-409A-AA2D-D9FE7953C0EF</string>
+			<string>35E6D007-B611-476F-9A1B-60A45DBBB771</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
-		<key>UseRawUuidEncoding</key>
-		<false/>
 		<key>UpdateNVRAM</key>
 		<true/>
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Custom</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -1205,13 +1205,13 @@
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1B,0x0)</string>
 			<key>AudioOut</key>
-			<integer>5</integer>
+			<integer>2</integer>
 			<key>AudioSupport</key>
 			<true/>
 			<key>MinimumVolume</key>
-			<integer>40</integer>
+			<integer>47</integer>
 			<key>VolumeAmplifier</key>
-			<integer>143</integer>
+			<integer>100</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
